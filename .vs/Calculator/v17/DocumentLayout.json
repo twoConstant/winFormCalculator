@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "F:\\dev\\project\\c#\\codingOn\\Calculator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{514D13BE-8150-4045-A866-E19074F87E28}|Calculator\\Calculator.csproj|f:\\dev\\project\\c#\\codingon\\calculator\\calculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{514D13BE-8150-4045-A866-E19074F87E28}|Calculator\\Calculator.csproj|solutionrelative:calculator\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{514D13BE-8150-4045-A866-E19074F87E28}|Calculator\\Calculator.csproj|f:\\dev\\project\\c#\\codingon\\calculator\\calculator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514D13BE-8150-4045-A866-E19074F87E28}|Calculator\\Calculator.csproj|solutionrelative:calculator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514D13BE-8150-4045-A866-E19074F87E28}|Calculator\\Calculator.csproj|f:\\dev\\project\\c#\\codingon\\calculator\\calculator\\calculatorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{514D13BE-8150-4045-A866-E19074F87E28}|Calculator\\Calculator.csproj|solutionrelative:calculator\\calculatorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{514D13BE-8150-4045-A866-E19074F87E28}|Calculator\\Calculator.csproj|f:\\dev\\project\\c#\\codingon\\calculator\\calculator\\calculatorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{514D13BE-8150-4045-A866-E19074F87E28}|Calculator\\Calculator.csproj|solutionrelative:calculator\\calculatorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,14 +35,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "F:\\dev\\project\\c#\\codingOn\\Calculator\\Calculator\\Form1.cs",
-              "RelativeDocumentMoniker": "Calculator\\Form1.cs",
-              "ToolTip": "F:\\dev\\project\\c#\\codingOn\\Calculator\\Calculator\\Form1.cs [Design]",
-              "RelativeToolTip": "Calculator\\Form1.cs [Design]",
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\dev\\project\\c#\\codingOn\\Calculator\\Calculator\\Program.cs",
+              "RelativeDocumentMoniker": "Calculator\\Program.cs",
+              "ToolTip": "F:\\dev\\project\\c#\\codingOn\\Calculator\\Calculator\\Program.cs",
+              "RelativeToolTip": "Calculator\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T09:40:07.587Z",
+              "WhenOpened": "2024-12-23T10:19:59.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CalculatorForm.cs [Design]",
+              "DocumentMoniker": "F:\\dev\\project\\c#\\codingOn\\Calculator\\Calculator\\CalculatorForm.cs",
+              "RelativeDocumentMoniker": "Calculator\\CalculatorForm.cs",
+              "ToolTip": "F:\\dev\\project\\c#\\codingOn\\Calculator\\Calculator\\CalculatorForm.cs [Design]",
+              "RelativeToolTip": "Calculator\\CalculatorForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T09:51:04.699Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CalculatorForm.cs",
+              "DocumentMoniker": "F:\\dev\\project\\c#\\codingOn\\Calculator\\Calculator\\CalculatorForm.cs",
+              "RelativeDocumentMoniker": "Calculator\\CalculatorForm.cs",
+              "ToolTip": "F:\\dev\\project\\c#\\codingOn\\Calculator\\Calculator\\CalculatorForm.cs",
+              "RelativeToolTip": "Calculator\\CalculatorForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-23T09:50:49.327Z",
+              "EditorCaption": ""
             }
           ]
         }
