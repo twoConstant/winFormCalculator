@@ -114,6 +114,7 @@ namespace calculator
         {
             label_subDisplay.Text = calculators.GetLatestFormula(label_display.Text, "÷");
             label_display.Text = calculators.GetCurrentDouble();
+            operatorChangeFlag = true;
         }
         // ===== 사칙연산 버튼 클릭 이벤트 모음 끝 ===== 
         #endregion
@@ -264,44 +265,6 @@ namespace calculator
         {
             label_subDisplay.Text = calculators.SubmitAndGetResult(label_display.Text);
             label_display.Text = calculators.GetCurrentDouble();
-            //if (equalClickFlag == false)
-            //{
-            //    secondOperand = double.Parse(label_display.Text);
-            //    subDisplayPrint(secondOperand.ToString());
-            //    subDisplayPrint(" = ");
-            //}
-
-            //equalClickFlag = true;
-
-            //switch (currentOperator)
-            //{
-            //    case Operators.Add:
-            //        //resultNumber = mathOperation.Add(firstOperand, secondOperand);
-            //        printResult(resultNumber);
-            //        break;
-            //    case Operators.Subtract:
-            //        //resultNumber = mathOperation.Subtract(firstOperand, secondOperand);
-            //        printResult(resultNumber);
-            //        break;
-            //    case Operators.Multiply:
-            //        //resultNumber = mathOperation.Multiply(firstOperand, secondOperand);
-            //        printResult(resultNumber);
-            //        break;
-            //    case Operators.Divide:
-            //        if (secondOperand == 0)
-            //        {
-            //            label_display.Text = "0으로 나눌 수 없습니다.";
-            //        }
-            //        else
-            //        {
-            //            //resultNumber = mathOperation.Divide(firstOperand, secondOperand);
-            //            printResult(resultNumber);
-            //        }
-            //        break;
-            //}
-
-            //currentOperator = Operators.None;
-
         }
 
 
