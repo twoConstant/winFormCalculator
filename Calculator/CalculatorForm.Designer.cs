@@ -30,7 +30,6 @@
         {
             this.label_display = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button_Mv = new System.Windows.Forms.Button();
             this.button_MS = new System.Windows.Forms.Button();
             this.button_MMinus = new System.Windows.Forms.Button();
             this.button_MPlus = new System.Windows.Forms.Button();
@@ -78,14 +77,13 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 6;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
-            this.tableLayoutPanel1.Controls.Add(this.button_Mv, 5, 0);
+            this.tableLayoutPanel1.ColumnCount = 5;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.00001F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.button_MS, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.button_MMinus, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.button_MPlus, 2, 0);
@@ -98,23 +96,12 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(382, 60);
             this.tableLayoutPanel1.TabIndex = 2;
             // 
-            // button_Mv
-            // 
-            this.button_Mv.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_Mv.Location = new System.Drawing.Point(318, 3);
-            this.button_Mv.Name = "button_Mv";
-            this.button_Mv.Size = new System.Drawing.Size(57, 54);
-            this.button_Mv.TabIndex = 6;
-            this.button_Mv.Text = "Mv";
-            this.button_Mv.UseVisualStyleBackColor = true;
-            this.button_Mv.Click += new System.EventHandler(this.button_Mv_Click);
-            // 
             // button_MS
             // 
             this.button_MS.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_MS.Location = new System.Drawing.Point(255, 3);
+            this.button_MS.Location = new System.Drawing.Point(307, 3);
             this.button_MS.Name = "button_MS";
-            this.button_MS.Size = new System.Drawing.Size(57, 54);
+            this.button_MS.Size = new System.Drawing.Size(72, 54);
             this.button_MS.TabIndex = 5;
             this.button_MS.Text = "MS";
             this.button_MS.UseVisualStyleBackColor = true;
@@ -123,9 +110,9 @@
             // button_MMinus
             // 
             this.button_MMinus.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_MMinus.Location = new System.Drawing.Point(192, 3);
+            this.button_MMinus.Location = new System.Drawing.Point(231, 3);
             this.button_MMinus.Name = "button_MMinus";
-            this.button_MMinus.Size = new System.Drawing.Size(57, 54);
+            this.button_MMinus.Size = new System.Drawing.Size(70, 54);
             this.button_MMinus.TabIndex = 4;
             this.button_MMinus.Text = "M-";
             this.button_MMinus.UseVisualStyleBackColor = true;
@@ -134,9 +121,9 @@
             // button_MPlus
             // 
             this.button_MPlus.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_MPlus.Location = new System.Drawing.Point(129, 3);
+            this.button_MPlus.Location = new System.Drawing.Point(155, 3);
             this.button_MPlus.Name = "button_MPlus";
-            this.button_MPlus.Size = new System.Drawing.Size(57, 54);
+            this.button_MPlus.Size = new System.Drawing.Size(70, 54);
             this.button_MPlus.TabIndex = 3;
             this.button_MPlus.Text = "M+";
             this.button_MPlus.UseVisualStyleBackColor = true;
@@ -144,10 +131,11 @@
             // 
             // button_MR
             // 
+            this.button_MR.Enabled = false;
             this.button_MR.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button_MR.Location = new System.Drawing.Point(66, 3);
+            this.button_MR.Location = new System.Drawing.Point(79, 3);
             this.button_MR.Name = "button_MR";
-            this.button_MR.Size = new System.Drawing.Size(57, 54);
+            this.button_MR.Size = new System.Drawing.Size(70, 54);
             this.button_MR.TabIndex = 2;
             this.button_MR.Text = "MR";
             this.button_MR.UseVisualStyleBackColor = true;
@@ -155,10 +143,11 @@
             // 
             // button_MC
             // 
+            this.button_MC.Enabled = false;
             this.button_MC.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_MC.Location = new System.Drawing.Point(3, 3);
             this.button_MC.Name = "button_MC";
-            this.button_MC.Size = new System.Drawing.Size(57, 54);
+            this.button_MC.Size = new System.Drawing.Size(70, 54);
             this.button_MC.TabIndex = 1;
             this.button_MC.Text = "MC";
             this.button_MC.UseVisualStyleBackColor = true;
@@ -515,7 +504,6 @@
 
         private System.Windows.Forms.Label label_display;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button_Mv;
         private System.Windows.Forms.Button button_MS;
         private System.Windows.Forms.Button button_MMinus;
         private System.Windows.Forms.Button button_MPlus;

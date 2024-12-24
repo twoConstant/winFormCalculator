@@ -55,7 +55,7 @@
     <Compile Include="Calculators.cs" />
     <Compile Include="InputParser.cs" />
     <Compile Include="MathOperations.cs" />
-    <Compile Include="Memory.cs" />
+    <Compile Include="MemoryFunction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CalculatorForm.resx">
