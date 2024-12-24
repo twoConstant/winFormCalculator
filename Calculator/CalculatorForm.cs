@@ -223,7 +223,23 @@ namespace calculator
         // 점 입력
         private void button_dot_Click(object sender, EventArgs e)
         {
+            // 중복된 . 입력 방지
+            if (label_display.Text.Contains('.') && label_display.Text[label_display.Text.Length - 1] != '.')
+            {
+                return; // 이미 소수점이 존재하면 추가하지 않음
+            }
 
+            // 마지막이 .으로 끝나는 경우
+            if (label_display.Text.EndsWith("."))
+            {
+                // .을 제외한 값을 다시 반환
+                label_display.Text = label_display.Text.TrimEnd('.');
+            }
+            else
+            {
+                // 마지막이 .이 아닌경우
+                label_display.Text += ".";
+            }
         }
         // Clear Entry(직전 입력 지우기) 
         private void button_CE_Click(object sender, EventArgs e)
