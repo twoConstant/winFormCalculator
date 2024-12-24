@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using calculator;
+using Calculator;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace calculator
 {
@@ -27,6 +29,8 @@ namespace calculator
             StoreMemory,
         }
 
+        Calculators calculators = new Calculators();
+
         double intNumber = 0;
         double firstOperand = 0;
         double secondOperand = 0;
@@ -36,7 +40,7 @@ namespace calculator
         bool operatorChangeFlag = false;
         bool equalClickFlag = false;
 
-        // MathOperation mathOperation = new MathOperation();
+        MathOperations mathOperation = new MathOperations();
 
         public CalculatorForm()
         {
@@ -87,54 +91,26 @@ namespace calculator
         #region
         private void button_plus_Click(object sender, EventArgs e)
         {
-            if (currentOperator != Operators.None)
-            {
-                label_subDisplay.Text = label_subDisplay.Text.Substring(0, label_subDisplay.Text.Length - 3);
-            }
-            firstOperand = double.Parse(label_display.Text);
-            subDisplayPrint(firstOperand.ToString() + " + ");
-
-            currentOperator = Operators.Add;
-            operatorChangeFlag = true;
+            label_subDisplay.Text = calculators.GetLatestFormula(label_display.Text, " + ");
+            label_display.Text = calculators.GetCurrentDouble();
         }
 
         private void button_minus_Click(object sender, EventArgs e)
         {
-            if (currentOperator != Operators.None)
-            {
-                label_subDisplay.Text = label_subDisplay.Text.Substring(0, label_subDisplay.Text.Length - 3);
-            }
-            firstOperand = double.Parse(label_display.Text);
-            subDisplayPrint(firstOperand.ToString() + " - ");
-
-            currentOperator = Operators.Subtract;
-            operatorChangeFlag = true;
+            label_subDisplay.Text = calculators.GetLatestFormula(label_display.Text, " - ");
+            label_display.Text = calculators.GetCurrentDouble();
         }
 
         private void button_multiply_Click(object sender, EventArgs e)
         {
-            if (currentOperator != Operators.None)
-            {
-                label_subDisplay.Text = label_subDisplay.Text.Substring(0, label_subDisplay.Text.Length - 3);
-            }
-            firstOperand = double.Parse(label_display.Text);
-            subDisplayPrint(firstOperand.ToString() + " × ");
-
-            currentOperator = Operators.Multiply;
-            operatorChangeFlag = true;
+            label_subDisplay.Text = calculators.GetLatestFormula(label_display.Text, " × ");
+            label_display.Text = calculators.GetCurrentDouble();
         }
 
         private void button_divide_Click(object sender, EventArgs e)
         {
-            if (currentOperator != Operators.None)
-            {
-                label_subDisplay.Text = label_subDisplay.Text.Substring(0, label_subDisplay.Text.Length - 3);
-            }
-            firstOperand = double.Parse(label_display.Text);
-            subDisplayPrint(firstOperand.ToString() + " ÷ ");
-
-            currentOperator = Operators.Divide;
-            operatorChangeFlag = true;
+            label_subDisplay.Text = calculators.GetLatestFormula(label_display.Text, " ÷ ");
+            label_display.Text = calculators.GetCurrentDouble();
         }
         // ===== 사칙연산 버튼 클릭 이벤트 모음 끝 ===== 
         #endregion
@@ -146,7 +122,7 @@ namespace calculator
         {
             firstOperand = double.Parse(label_display.Text);
 
-            //resultNumber = mathOperation.Inverse(firstOperand);
+            resultNumber = mathOperation.Inverse(firstOperand);
             printResult(resultNumber);
         }
         // x^2 연산
@@ -154,7 +130,7 @@ namespace calculator
         {
             firstOperand = double.Parse(label_display.Text);
 
-            //resultNumber = mathOperation.Square(firstOperand);
+            resultNumber = mathOperation.Square(firstOperand);
             printResult(resultNumber);
         }
         // 루트 연산
@@ -162,14 +138,14 @@ namespace calculator
         {
             firstOperand = double.Parse(label_display.Text);
 
-            //resultNumber = mathOperation.SquareRoot(firstOperand);
+            resultNumber = mathOperation.SquareRoot(firstOperand);
             printResult(resultNumber);
         }
         // % 연산
         private void button_percent_Click(object sender, EventArgs e)
         {
             double percentOperand = double.Parse(label_display.Text);
-            //resultNumber = mathOperation.PercentMultiplyDivide(percentOperand);
+            resultNumber = mathOperation.PercentMultiplyDivide(percentOperand);
             printResult(resultNumber);
         }
         // +/- 연산
@@ -177,7 +153,7 @@ namespace calculator
         {
             firstOperand = double.Parse(label_display.Text);
 
-            //resultNumber = mathOperation.ReverseSign(firstOperand);
+            resultNumber = mathOperation.ReverseSign(firstOperand);
             printResult(resultNumber);
         }
         // ===== 특수 연산 기능 버튼 이벤트 모음 끝 ===== 

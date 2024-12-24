@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    internal class MathOperations
+    public class MathOperations
     {
         // 특수 연산
         public double Inverse(double value)  // 1/x
