@@ -23,13 +23,11 @@ namespace calculator
             Subtract,   // 빼기
             Multiply,   // 곱하기
             Divide,     // 나누기
-            ClearMemory,
-            ReloadMemory,
-            MinusMemory,
-            StoreMemory,
         }
 
         Calculators calculators = new Calculators();
+
+        string memory = "";
 
         double intNumber = 0;
         double firstOperand = 0;
@@ -53,41 +51,39 @@ namespace calculator
         // 메모리 초기화
         private void button_MC_Click(object sender, EventArgs e)
         {
-            memoryFunction.ClearMemory();
-
+            memory = "";
             button_MR.Enabled = false;
             button_MC.Enabled = false;
+            button_MPlus.Enabled = false;
+            button_MMinus.Enabled = false;
         }
 
         // 메모리 값 읽기
         private void button_MR_Click(object sender, EventArgs e)
         {
-            label_display.Text = memoryFunction.RecallMemory().ToString();
+            label_display.Text = memory;
         }
 
         // 메모리 값 더하기
         private void button_MPlus_Click(object sender, EventArgs e)
         {
-            double operandMemory = double.Parse(label_display.Text);
-            memoryFunction.PlusMemory(operandMemory);
+            memory = (Int32.Parse(memory) + Int32.Parse(label_display.Text)).ToString();
         }
 
         // 메모리 값 빼기
         private void button_MMinus_Click(object sender, EventArgs e)
         {
-            double operandMemory = double.Parse(label_display.Text);
-            memoryFunction.MinusMemory(operandMemory);
+            memory = (Int32.Parse(memory) - Int32.Parse(label_display.Text)).ToString();
         }
 
         // 메모리 값 저장 
         private void button_MS_Click(object sender, EventArgs e)
         {
-            double memory = double.Parse(label_display.Text);
-
-            memoryFunction.StoreMemory(memory);
-
+            memory = label_display.Text;
             button_MR.Enabled = true;
             button_MC.Enabled = true;
+            button_MPlus.Enabled = true;
+            button_MMinus.Enabled = true;
         }
 
         // ===== 메모리 연산 기능 버튼 이벤트 모음 끝 ===== 

@@ -109,6 +109,7 @@
             // 
             // button_MMinus
             // 
+            this.button_MMinus.Enabled = false;
             this.button_MMinus.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_MMinus.Location = new System.Drawing.Point(231, 3);
             this.button_MMinus.Name = "button_MMinus";
@@ -120,6 +121,7 @@
             // 
             // button_MPlus
             // 
+            this.button_MPlus.Enabled = false;
             this.button_MPlus.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button_MPlus.Location = new System.Drawing.Point(155, 3);
             this.button_MPlus.Name = "button_MPlus";
