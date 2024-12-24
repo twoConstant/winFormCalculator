@@ -61,7 +61,7 @@
             this.button_C = new System.Windows.Forms.Button();
             this.button_CE = new System.Windows.Forms.Button();
             this.button_percent = new System.Windows.Forms.Button();
-            this.label_ = new System.Windows.Forms.Label();
+            this.label_subDisplay = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -484,26 +484,26 @@
             this.button_percent.UseVisualStyleBackColor = false;
             this.button_percent.Click += new System.EventHandler(this.button_percent_Click);
             // 
-            // label_
+            // label_subDisplay
             // 
-            this.label_.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label_.Font = new System.Drawing.Font("Gulim", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label_.Location = new System.Drawing.Point(0, 0);
-            this.label_.Name = "label_";
-            this.label_.Size = new System.Drawing.Size(382, 43);
-            this.label_.TabIndex = 0;
-            this.label_.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.label_subDisplay.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label_subDisplay.Font = new System.Drawing.Font("Gulim", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label_subDisplay.Location = new System.Drawing.Point(0, 0);
+            this.label_subDisplay.Name = "label_subDisplay";
+            this.label_subDisplay.Size = new System.Drawing.Size(382, 43);
+            this.label_subDisplay.TabIndex = 0;
+            this.label_subDisplay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // Calculator
+            // CalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(382, 583);
-            this.Controls.Add(this.label_);
+            this.Controls.Add(this.label_subDisplay);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.label_display);
-            this.Name = "Calculator";
+            this.Name = "CalculatorForm";
             this.Text = "Calculatorcs";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -546,6 +546,6 @@
         private System.Windows.Forms.Button button_C;
         private System.Windows.Forms.Button button_CE;
         private System.Windows.Forms.Button button_percent;
-        private System.Windows.Forms.Label label_;
+        private System.Windows.Forms.Label label_subDisplay;
     }
 }
