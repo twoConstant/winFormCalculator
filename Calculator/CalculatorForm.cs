@@ -149,7 +149,7 @@ namespace calculator
         private void button_percent_Click(object sender, EventArgs e)
         {
             double percentOperand = double.Parse(label_display.Text);
-            resultNumber = mathOperation.PercentMultiplyDivide(percentOperand);
+            resultNumber = mathOperation.Percent(percentOperand);
             printResult(resultNumber);
         }
         // +/- 연산

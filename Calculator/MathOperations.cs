@@ -21,11 +21,7 @@ namespace Calculator
         {
             return Math.Pow(value, 0.5);
         }
-        public double PercentAddSubtract(double targetValue, double value) // targetValue * (value%)
-        {
-            return targetValue * value / 100;
-        }
-        public double PercentMultiplyDivide(double value) // value%
+        public double Percent(double value) // value%
         {
             return value / 100;
         }
