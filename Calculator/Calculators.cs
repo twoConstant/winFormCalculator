@@ -30,12 +30,23 @@ namespace Calculator
         // 등호 눌렀을때 저장하기
         public string SubmitAndGetResult(string inputNumStr)
         {
-            string latestFomula = sbForCase.ToString();
+            // 최신 수식을 가져옴
+            string latestFormula = sbForCase.ToString();
+
+            // 마지막 입력 값으로 계산 수행
             UpdateCurrentDouble(inputNumStr);
+
+            // 최종 결과 계산
             string result = GetCurrentDouble();
-            sbForHistory.Append($"{latestFomula} = {result}\r\n");
+
+            // 계산 기록 저장
+            sbForHistory.Append($"{latestFormula}{inputNumStr}={result}\r\n");
+
+            // 상태 초기화
             InitCase();
-            return $"{latestFomula} = {result}\r\n";
+
+            // 결과 반환
+            return $"{latestFormula}{inputNumStr}={result}\r\n";
         }
 
         // C를 눌렀을때
