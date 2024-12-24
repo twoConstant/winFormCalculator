@@ -51,7 +51,11 @@ namespace Calculator
             {
                 MemoryStorage[MemoryStorage.Count - 1] += value;    
             }
-            MemoryStorage.Add(value);
+            else
+            {
+                MemoryStorage.Add(value);    
+            }
+            
         }
         
         // 현재 화면에 나타난 값을 메모리의 마지막 요소에 저장
@@ -59,9 +63,13 @@ namespace Calculator
         {
             if (MemoryStorage.Any())
             {
-                MemoryStorage.Add(-value);        
+                MemoryStorage[MemoryStorage.Count - 1] -= value;
             }
-            MemoryStorage[MemoryStorage.Count - 1] -= value;
+            else
+            {
+                MemoryStorage.Add(-value);    
+            }
+                    
         }
         
         // 메모리 리스트에 새로운 요소로 저장

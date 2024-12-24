@@ -70,6 +70,9 @@ namespace calculator
         {
             double operandMemory = double.Parse(label_display.Text);
             memoryFunction.PlusMemory(operandMemory);
+            button_MR.Enabled = true;
+            button_MC.Enabled = true;
+
         }
 
         // 메모리 값 빼기
@@ -77,6 +80,9 @@ namespace calculator
         {
             double operandMemory = double.Parse(label_display.Text);
             memoryFunction.MinusMemory(operandMemory);
+            button_MR.Enabled = true;
+            button_MC.Enabled = true;
+
         }
 
         // 메모리 값 저장 
