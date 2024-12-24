@@ -67,13 +67,19 @@ namespace calculator
         // 메모리 값 더하기
         private void button_MPlus_Click(object sender, EventArgs e)
         {
-            memory = (Int32.Parse(memory) + Int32.Parse(label_display.Text)).ToString();
+            double operandMemory = double.Parse(label_display.Text);
+            memoryFunction.PlusMemory(operandMemory);
+            button_MR.Enabled = true;
+            button_MC.Enabled = true;
         }
 
         // 메모리 값 빼기
         private void button_MMinus_Click(object sender, EventArgs e)
         {
-            memory = (Int32.Parse(memory) - Int32.Parse(label_display.Text)).ToString();
+            double operandMemory = double.Parse(label_display.Text);
+            memoryFunction.MinusMemory(operandMemory);
+            button_MR.Enabled = true;
+            button_MC.Enabled = true;
         }
 
         // 메모리 값 저장 
