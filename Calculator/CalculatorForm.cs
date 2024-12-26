@@ -38,7 +38,7 @@ namespace calculator
         bool operatorChangeFlag = false;
         bool equalClickFlag = false;
 
-        MathOperations mathOperation = new MathOperations();
+        MathOperations mathOperation;
         MemoryFunction memoryFunction = new MemoryFunction();
 
         public CalculatorForm()
